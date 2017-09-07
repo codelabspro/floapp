@@ -1,6 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Widgets</h1>
+<p id="notice"><%= notice %></p>
+<div class="container">
+<div class="row">
+  <div class="bd-example">
+  <h3>FloApp</h3>
+  </div>
+</div>
+</div>
+
 
 <table>
   <thead>
@@ -8,7 +16,6 @@
       <th>Title</th>
       <th>Description</th>
       <th>Notes</th>
-      <th>Category</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,10 +26,6 @@
         <td><%= widget.title %></td>
         <td><%= widget.description %></td>
         <td><%= widget.notes %></td>
-        <td><%= widget.category %></td>
-        <td><%= link_to 'Show', widget %></td>
-        <td><%= link_to 'Edit', edit_widget_path(widget) %></td>
-        <td><%= link_to 'Destroy', widget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +33,3 @@
 
 <br>
 
-<%= link_to 'New Widget', new_widget_path %>
