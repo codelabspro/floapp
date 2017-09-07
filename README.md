@@ -13,6 +13,19 @@ bundle install
 
 bin/rails g rails_admin:install
 
+Add
+gem 'remotipart', '~> 1.2'
+to Gemfile
+and run
+bundle install
+
+Add 
+gem 'rails_admin_rollincode', '~> 1.0'
+to Gemfile
+and run
+bundle install
+
+
 
 bin/rails g scaffold Category title description
 
