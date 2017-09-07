@@ -13,18 +13,21 @@ bundle install
 bin/rails g rails_admin:install
 
 ---
+
 Add
 gem 'remotipart', '~> 1.2'
 to Gemfile
 and run
 bundle install
 ---
+
 Add 
 gem 'rails_admin_rollincode', '~> 1.0'
 to Gemfile
 and run
 bundle install
 ---
+
 Add 
 gem 'devise'
 to Gemfile
@@ -33,6 +36,7 @@ bundle install
 ---
 Then, run the generator
 $ rails generate devise:install
+
 
 Running via Spring preloader in process 11017
       create  config/initializers/devise.rb
@@ -69,9 +73,12 @@ Some setup you must do manually if you haven't yet:
 
 ---
 
+
 bin/rails g scaffold Category title description
 
+
 bin/rails g scaffold Widget title:string description:string notes:text category:belongs_to
+
 ---
 bin/rails db:migrate
 
