@@ -1,22 +1,22 @@
-rails new floapp --api
+rails new floapp 
+
+
+
+
+
+
+Gemfile
+
+gem 'rails_admin', '~> 1.2'
+
+bundle install
+
+bin/rails g rails_admin:install
 
 
 bin/rails g scaffold Category title description
 
 bin/rails g scaffold Widget title:string description:string notes:text category:belongs_to
-
-
-Gemfile
-
-gem 'devise', '> 4.x'
-gem 'activeadmin', github: 'activeadmin'
-
-
-bundle install
-
-Uncomment require "sprockets/railtie" in config/application.rb
-
-bin/rails generate active_admin:install
 
 bin/rails db:migrate
 bin/rails db:seed
@@ -37,6 +37,9 @@ config.secret_key = '4db88df3ff216f27b5de05015ed5ab7633a095c2444d31af765cdbedd0e
 
 Add that line to config/initializers/devise.rb
 
+## Helpful Links
+
+http://onebitcode.com/english-rails-admin/
 
 https://github.com/activeadmin/activeadmin/wiki
 
